@@ -1,9 +1,14 @@
 {
   "name": "orangehrm-playwright",
   "version": "1.0.0",
-  "description": "",
+  "description": "Orange HRM Automation",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "ui_test": "npx playwright test --headed tests/ui_test/specs/",
+    "api_test": "npx playwright test tests/api_test",
+    "show-report": "npx playwright show-report",
+    "gui": "npx playwright test --ui"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rajniss21/orangeHRM-playwright.git"
@@ -17,6 +22,7 @@
   "homepage": "https://github.com/rajniss21/orangeHRM-playwright#readme",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.8.1"
+    "@types/node": "^24.8.1",
+    "allure-playwright": "^3.4.2"
   }
 }
